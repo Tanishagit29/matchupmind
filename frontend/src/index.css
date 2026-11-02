@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { background: radial-gradient(1200px 500px at 80% -10%, #2a3a12 0%, transparent 60%), #15171a; color: #e7e9ea; font-family: system-ui, sans-serif; }
+.card { @apply rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur; }
+.btn { @apply rounded-xl bg-lime-400 px-4 py-2 font-semibold text-black transition hover:bg-lime-300 disabled:opacity-50; }
+.inp { @apply w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 outline-none focus:border-lime-400; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.fade { animation: fade .3s ease both; }
